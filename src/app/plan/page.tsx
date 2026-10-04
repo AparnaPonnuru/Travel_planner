@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
   Sparkles,
@@ -19,7 +19,22 @@ import {
 } from 'lucide-react';
 import { TravelStyle, PartyType, TransportType, AccommodationType } from '@/types/trip';
 
-export default function StreamlinedPlanPage() {
+export default function PlanPageWrapper() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-[#FFFDF9]">
+        <div className="text-center space-y-3">
+          <Sparkles className="w-8 h-8 text-[#DF6951] animate-spin mx-auto" />
+          <p className="text-sm font-semibold text-[#5E6282]">Loading planner...</p>
+        </div>
+      </div>
+    }>
+      <StreamlinedPlanPage />
+    </Suspense>
+  );
+}
+
+function StreamlinedPlanPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const autofill = searchParams.get('autofill');
