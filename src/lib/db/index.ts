@@ -73,73 +73,93 @@ You follow strict geographic efficiency, realistic transit times, opening hours,
   }
 };
 
-function ensureDbDirectory() {
-  const dir = path.dirname(DB_FILE_PATH);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
+// ─── Hybrid Storage: In-Memory (primary) + File System (fallback for local dev) ───
+// On Vercel, the filesystem is read-only so fs.writeFileSync silently fails.
+// This global in-memory singleton ensures data persists across API calls within 
+// the same serverless cold-start instance.
+
+const globalForDb = globalThis as unknown as { __voyageDb?: DatabaseSchema };
+
+function getInitialDatabase(): DatabaseSchema {
+  return {
+    users: [
+      {
+        id: 'demo-user-1',
+        name: 'Aarav Sharma',
+        email: 'demo@voyage.ai',
+        passwordHash: '$2a$10$w09u7L4iP2YwO9yZsmYtxehYk1qF79M2K64pS.jU48aXo3P0gq.eq', // password: Password123!
+        homeCity: 'Hyderabad',
+        currency: 'INR',
+        preferredTravelStyles: ['relaxed', 'nature', 'spiritual', 'food-focused'],
+        dietaryRestrictions: ['vegetarian'],
+        role: 'user',
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 'admin-user-1',
+        name: 'Elena Rostova (Admin)',
+        email: 'admin@voyage.ai',
+        passwordHash: '$2a$10$w09u7L4iP2YwO9yZsmYtxehYk1qF79M2K64pS.jU48aXo3P0gq.eq', // password: Password123!
+        homeCity: 'San Francisco',
+        currency: 'USD',
+        preferredTravelStyles: ['luxury', 'cultural', 'photography'],
+        dietaryRestrictions: [],
+        role: 'admin',
+        createdAt: new Date().toISOString()
+      }
+    ],
+    trips: [],
+    tripVersions: {},
+    aiConversations: [],
+    adminConfig: { ...INITIAL_ADMIN_CONFIG }
+  };
 }
 
 function loadDatabase(): DatabaseSchema {
-  try {
-    ensureDbDirectory();
-    if (!fs.existsSync(DB_FILE_PATH)) {
-      const initialDb: DatabaseSchema = {
-        users: [
-          {
-            id: 'demo-user-1',
-            name: 'Aarav Sharma',
-            email: 'demo@voyage.ai',
-            passwordHash: '$2a$10$w09u7L4iP2YwO9yZsmYtxehYk1qF79M2K64pS.jU48aXo3P0gq.eq', // password: Password123!
-            homeCity: 'Hyderabad',
-            currency: 'INR',
-            preferredTravelStyles: ['relaxed', 'nature', 'spiritual', 'food-focused'],
-            dietaryRestrictions: ['vegetarian'],
-            role: 'user',
-            createdAt: new Date().toISOString()
-          },
-          {
-            id: 'admin-user-1',
-            name: 'Elena Rostova (Admin)',
-            email: 'admin@voyage.ai',
-            passwordHash: '$2a$10$w09u7L4iP2YwO9yZsmYtxehYk1qF79M2K64pS.jU48aXo3P0gq.eq', // password: Password123!
-            homeCity: 'San Francisco',
-            currency: 'USD',
-            preferredTravelStyles: ['luxury', 'cultural', 'photography'],
-            dietaryRestrictions: [],
-            role: 'admin',
-            createdAt: new Date().toISOString()
-          }
-        ],
-        trips: [],
-        tripVersions: {},
-        aiConversations: [],
-        adminConfig: INITIAL_ADMIN_CONFIG
-      };
-      fs.writeFileSync(DB_FILE_PATH, JSON.stringify(initialDb, null, 2), 'utf-8');
-      return initialDb;
-    }
-
-    const data = fs.readFileSync(DB_FILE_PATH, 'utf-8');
-    return JSON.parse(data) as DatabaseSchema;
-  } catch (error) {
-    console.error('Error loading database:', error);
-    return {
-      users: [],
-      trips: [],
-      tripVersions: {},
-      aiConversations: [],
-      adminConfig: INITIAL_ADMIN_CONFIG
-    };
+  // Return from in-memory cache if available
+  if (globalForDb.__voyageDb) {
+    return globalForDb.__voyageDb;
   }
+
+  // Try loading from file system (works in local dev)
+  try {
+    if (fs.existsSync(DB_FILE_PATH)) {
+      const data = fs.readFileSync(DB_FILE_PATH, 'utf-8');
+      const parsed = JSON.parse(data) as DatabaseSchema;
+      globalForDb.__voyageDb = parsed;
+      return parsed;
+    }
+  } catch (error) {
+    console.warn('[DB] Could not read file, using in-memory store:', (error as Error).message);
+  }
+
+  // Initialize fresh database in memory
+  const initialDb = getInitialDatabase();
+  globalForDb.__voyageDb = initialDb;
+
+  // Try to persist to file (will work locally, silently fail on Vercel)
+  tryPersistToFile(initialDb);
+
+  return initialDb;
 }
 
 function saveDatabase(db: DatabaseSchema) {
+  // Always save to in-memory store (works everywhere)
+  globalForDb.__voyageDb = db;
+
+  // Attempt file persistence (best-effort, non-blocking for Vercel)
+  tryPersistToFile(db);
+}
+
+function tryPersistToFile(db: DatabaseSchema) {
   try {
-    ensureDbDirectory();
+    const dir = path.dirname(DB_FILE_PATH);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
     fs.writeFileSync(DB_FILE_PATH, JSON.stringify(db, null, 2), 'utf-8');
-  } catch (error) {
-    console.error('Error saving database:', error);
+  } catch {
+    // Silently ignore - expected on Vercel's read-only filesystem
   }
 }
 

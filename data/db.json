@@ -53,6 +53,1031 @@
   ],
   "trips": [
     {
+      "id": "trip-1791308561505-1rqm5",
+      "userId": "demo-user-1",
+      "title": " Adventure",
+      "destination": "",
+      "origin": "",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-16",
+      "durationDays": 5,
+      "travelers": {
+        "adults": 3,
+        "children": 0,
+        "infants": 0,
+        "partyType": "friends",
+        "customNotes": ""
+      },
+      "budget": {
+        "tier": "moderate",
+        "total": 60000,
+        "currency": "INR",
+        "includesTravelToOrigin": true,
+        "contingencyPercent": 8
+      },
+      "travelStyles": [
+        "relaxed",
+        "nature",
+        "food-focused"
+      ],
+      "interests": [
+        "beaches",
+        "nature",
+        "temples",
+        "food"
+      ],
+      "accommodationPreference": {
+        "type": "hotel",
+        "features": [
+          "central-location",
+          "cleanliness"
+        ]
+      },
+      "transportPreferences": {
+        "primary": "train",
+        "local": "local taxi",
+        "priority": "balanced"
+      },
+      "specialRequirements": {
+        "hardConstraints": [
+          "Pre-dawn temple pooja visit, vegetarian culinary focus"
+        ],
+        "softPreferences": [
+          "Balanced daylight pace",
+          "Scenic photo halts"
+        ]
+      },
+      "aiExplanations": [
+        "We structured the destinations linearly () to minimize backtracking across the Western Ghats.",
+        "Accommodations were selected near central districts to cut daily transit taxi time by over 45 minutes each day.",
+        "We scheduled an 8% contingency safety buffer in the budget so unexpected detours or spontaneous boat rides won't stress your finances.",
+        "We satisfied your constraint \"Pre-dawn temple pooja visit, vegetarian culinary focus\" with exact early scheduling."
+      ],
+      "routeSequence": [
+        ""
+      ],
+      "routeSegments": [
+        {
+          "from": "",
+          "to": "",
+          "distanceKm": 850,
+          "estimatedTime": "15h 30m",
+          "mode": "train",
+          "costEstimate": 1800,
+          "notes": "Direct connection from "
+        }
+      ],
+      "days": [
+        {
+          "dayNumber": 1,
+          "date": "2026-12-12",
+          "title": "Arrival in  & Orientation",
+          "baseCity": "",
+          "theme": "Heritage & First Impressions",
+          "weatherForecast": {
+            "tempC": 25,
+            "condition": "Pleasant & Mild",
+            "icon": "🌤️",
+            "rainProbability": 12,
+            "advice": "Comfortable casual attire and light footwear."
+          },
+          "stats": {
+            "totalTravelTimeMinutes": 45,
+            "walkingDistanceKm": 3.8,
+            "estimatedCost": 0
+          },
+          "activities": [
+            {
+              "id": "act-1-1",
+              "name": "Fort Kochi Heritage Walk & Chinese Fishing Nets",
+              "category": "culture",
+              "description": "Stroll past colonial Portuguese bungalows, David Hall, and witness fishermen lowering the 14th-century cantilevered Chinese fishing nets over the Arabian Sea at sunset.",
+              "startTime": "05:45",
+              "endTime": "07:45",
+              "durationMinutes": 120,
+              "estimatedCost": 100,
+              "locationName": "Fort Kochi Beach Promenade",
+              "coordinates": {
+                "lat": 9.9654,
+                "lng": 76.2427
+              },
+              "openingHours": "06:00 - 19:30",
+              "matchReason": "Selected for your interest in relaxed and historical places.",
+              "distanceFromPreviousKm": 0,
+              "transitDurationMinutes": 0,
+              "transitMode": "local taxi"
+            },
+            {
+              "id": "rest-1",
+              "name": "Afternoon Rejuvenation & Local Tea Tasting",
+              "category": "relaxation",
+              "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+              "startTime": "12:30",
+              "endTime": "14:00",
+              "durationMinutes": 90,
+              "estimatedCost": 150,
+              "locationName": "",
+              "coordinates": {
+                "lat": 9.9654,
+                "lng": 76.2427
+              },
+              "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+            },
+            {
+              "id": "act-1-2",
+              "name": "Mattancherry Palace (Dutch Palace) & Jewish Synagogue",
+              "category": "attraction",
+              "description": "Explore the 16th-century palace adorned with rare mythological murals and the serene 1568 Paradesi Synagogue in Jew Town with antique Belgian crystal chandeliers.",
+              "startTime": "14:00",
+              "endTime": "15:30",
+              "durationMinutes": 90,
+              "estimatedCost": 150,
+              "locationName": "Jew Town, Mattancherry",
+              "coordinates": {
+                "lat": 9.9579,
+                "lng": 76.2598
+              },
+              "openingHours": "09:00 - 17:00 (Closed Fri)",
+              "matchReason": "Selected for your interest in cultural and history.",
+              "distanceFromPreviousKm": 4.5,
+              "transitDurationMinutes": 20,
+              "transitMode": "local taxi"
+            }
+          ],
+          "meals": [
+            {
+              "type": "breakfast",
+              "restaurantName": "Kashi Art Cafe",
+              "cuisine": "Continental & Kerala Fusion",
+              "location": "Burgher Street, Fort Kochi",
+              "estimatedCostPerPerson": 350,
+              "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+            },
+            {
+              "type": "lunch",
+              "restaurantName": "Grand Pavilion (Traditional Sadya)",
+              "cuisine": "Authentic Kerala Traditional",
+              "location": "MG Road, Ernakulam",
+              "estimatedCostPerPerson": 400,
+              "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+            },
+            {
+              "type": "dinner",
+              "restaurantName": "Seagull Fort Kochi Deck",
+              "cuisine": "Coastal Kerala & Grills",
+              "location": "Calvathy Road, Fort Kochi",
+              "estimatedCostPerPerson": 650,
+              "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+            }
+          ],
+          "accommodation": {
+            "name": "Brunton Boatyard - CGH Earth",
+            "type": "Luxury Heritage Hotel",
+            "location": "Fort Kochi Waterfront",
+            "costPerNight": 12500,
+            "coordinates": {
+              "lat": 9.968,
+              "lng": 76.241
+            },
+            "rating": 4.8,
+            "rationale": "Historic harbor views, zero-plastic eco-luxury, walking distance to heritage sites."
+          }
+        },
+        {
+          "dayNumber": 2,
+          "date": "2026-12-13",
+          "title": "Immersive Discovery in ",
+          "baseCity": "",
+          "theme": "Cultural Wonders & Local Aromas",
+          "weatherForecast": {
+            "tempC": 25,
+            "condition": "Pleasant & Mild",
+            "icon": "🌤️",
+            "rainProbability": 12,
+            "advice": "Comfortable casual attire and light footwear."
+          },
+          "stats": {
+            "totalTravelTimeMinutes": 45,
+            "walkingDistanceKm": 2.7,
+            "estimatedCost": 0
+          },
+          "activities": [
+            {
+              "id": "act-2-1",
+              "name": "Chottanikkara Bhagavathy Temple",
+              "category": "spiritual",
+              "description": "One of the most revered ancient Vedic temples in Kerala dedicated to Goddess Rajarajeswari, known for its tranquil morning pooja and traditional temple architecture.",
+              "startTime": "09:30",
+              "endTime": "10:45",
+              "durationMinutes": 75,
+              "estimatedCost": 50,
+              "locationName": "Chottanikkara",
+              "coordinates": {
+                "lat": 9.9328,
+                "lng": 76.3917
+              },
+              "openingHours": "04:00 - 12:00, 16:00 - 20:30",
+              "matchReason": "Selected for your interest in spiritual and temples.",
+              "distanceFromPreviousKm": 0,
+              "transitDurationMinutes": 0,
+              "transitMode": "local taxi"
+            },
+            {
+              "id": "rest-2",
+              "name": "Afternoon Rejuvenation & Local Tea Tasting",
+              "category": "relaxation",
+              "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+              "startTime": "12:30",
+              "endTime": "14:00",
+              "durationMinutes": 90,
+              "estimatedCost": 150,
+              "locationName": "",
+              "coordinates": {
+                "lat": 9.9328,
+                "lng": 76.3917
+              },
+              "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+            },
+            {
+              "id": "act-2-2",
+              "name": "Munnar Tea Gardens & Lockhart Viewpoint",
+              "category": "nature",
+              "description": "Panoramic views across emerald rolling tea plantations, mist-covered ravines, and scenic photography spots overlooking the Sahyadri mountains.",
+              "startTime": "14:00",
+              "endTime": "16:00",
+              "durationMinutes": 120,
+              "estimatedCost": 200,
+              "locationName": "Lockhart Gap, Munnar",
+              "coordinates": {
+                "lat": 10.0456,
+                "lng": 77.0987
+              },
+              "openingHours": "07:00 - 18:00",
+              "matchReason": "Selected for your interest in nature and nature.",
+              "distanceFromPreviousKm": 4.5,
+              "transitDurationMinutes": 20,
+              "transitMode": "local taxi"
+            }
+          ],
+          "meals": [
+            {
+              "type": "breakfast",
+              "restaurantName": "Kashi Art Cafe",
+              "cuisine": "Continental & Kerala Fusion",
+              "location": "Burgher Street, Fort Kochi",
+              "estimatedCostPerPerson": 350,
+              "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+            },
+            {
+              "type": "lunch",
+              "restaurantName": "Grand Pavilion (Traditional Sadya)",
+              "cuisine": "Authentic Kerala Traditional",
+              "location": "MG Road, Ernakulam",
+              "estimatedCostPerPerson": 400,
+              "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+            },
+            {
+              "type": "dinner",
+              "restaurantName": "Seagull Fort Kochi Deck",
+              "cuisine": "Coastal Kerala & Grills",
+              "location": "Calvathy Road, Fort Kochi",
+              "estimatedCostPerPerson": 650,
+              "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+            }
+          ],
+          "accommodation": {
+            "name": "Forte Kochi Boutique Hotel",
+            "type": "Mid-Range Heritage Boutique",
+            "location": "Princess Street, Fort Kochi",
+            "costPerNight": 5500,
+            "coordinates": {
+              "lat": 9.966,
+              "lng": 76.2435
+            },
+            "rating": 4.6,
+            "rationale": "Exceptional central location, colonial charm, great value for families and couples."
+          }
+        },
+        {
+          "dayNumber": 3,
+          "date": "2026-12-14",
+          "title": "Immersive Discovery in ",
+          "baseCity": "",
+          "theme": "Verdant Nature & Panoramic Trails",
+          "weatherForecast": {
+            "tempC": 25,
+            "condition": "Pleasant & Mild",
+            "icon": "🌤️",
+            "rainProbability": 12,
+            "advice": "Comfortable casual attire and light footwear."
+          },
+          "stats": {
+            "totalTravelTimeMinutes": 45,
+            "walkingDistanceKm": 3.7,
+            "estimatedCost": 0
+          },
+          "activities": [
+            {
+              "id": "act-3-1",
+              "name": "Eravikulam National Park (Rajamalai)",
+              "category": "nature",
+              "description": "Home to the endangered Nilgiri Tahr and the highest peak in South India (Anamudi). Serene hill trails amidst shola grasslands.",
+              "startTime": "09:30",
+              "endTime": "11:30",
+              "durationMinutes": 120,
+              "estimatedCost": 450,
+              "locationName": "Eravikulam, Munnar",
+              "coordinates": {
+                "lat": 10.15,
+                "lng": 77.06
+              },
+              "openingHours": "07:30 - 16:00",
+              "matchReason": "Selected for your interest in nature and wildlife.",
+              "distanceFromPreviousKm": 0,
+              "transitDurationMinutes": 0,
+              "transitMode": "local taxi"
+            },
+            {
+              "id": "rest-3",
+              "name": "Afternoon Rejuvenation & Local Tea Tasting",
+              "category": "relaxation",
+              "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+              "startTime": "12:30",
+              "endTime": "14:00",
+              "durationMinutes": 90,
+              "estimatedCost": 150,
+              "locationName": "",
+              "coordinates": {
+                "lat": 10.15,
+                "lng": 77.06
+              },
+              "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+            },
+            {
+              "id": "act-3-2",
+              "name": "Periyar Wildlife Sanctuary Boat Safari",
+              "category": "adventure",
+              "description": "A two-hour tranquil lake cruise through the dense evergreen forest of Periyar tiger reserve, with frequent sightings of wild elephants, sambar, and hornbills.",
+              "startTime": "14:00",
+              "endTime": "16:00",
+              "durationMinutes": 120,
+              "estimatedCost": 550,
+              "locationName": "Thekkady Lake",
+              "coordinates": {
+                "lat": 9.58,
+                "lng": 77.17
+              },
+              "openingHours": "07:30 - 15:30",
+              "matchReason": "Selected for your interest in nature and wildlife.",
+              "distanceFromPreviousKm": 4.5,
+              "transitDurationMinutes": 20,
+              "transitMode": "local taxi"
+            }
+          ],
+          "meals": [
+            {
+              "type": "breakfast",
+              "restaurantName": "Kashi Art Cafe",
+              "cuisine": "Continental & Kerala Fusion",
+              "location": "Burgher Street, Fort Kochi",
+              "estimatedCostPerPerson": 350,
+              "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+            },
+            {
+              "type": "lunch",
+              "restaurantName": "Grand Pavilion (Traditional Sadya)",
+              "cuisine": "Authentic Kerala Traditional",
+              "location": "MG Road, Ernakulam",
+              "estimatedCostPerPerson": 400,
+              "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+            },
+            {
+              "type": "dinner",
+              "restaurantName": "Seagull Fort Kochi Deck",
+              "cuisine": "Coastal Kerala & Grills",
+              "location": "Calvathy Road, Fort Kochi",
+              "estimatedCostPerPerson": 650,
+              "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+            }
+          ],
+          "accommodation": {
+            "name": "Tea Valley Resort Munnar",
+            "type": "Nature Resort",
+            "location": "Pothamedu, Munnar",
+            "costPerNight": 4200,
+            "coordinates": {
+              "lat": 10.061,
+              "lng": 77.042
+            },
+            "rating": 4.5,
+            "rationale": "Overlooks deep tea valley, peaceful environment with mountain trails."
+          }
+        },
+        {
+          "dayNumber": 4,
+          "date": "2026-12-15",
+          "title": "Immersive Discovery in ",
+          "baseCity": "",
+          "theme": "Backwaters & Coastal Serenity",
+          "weatherForecast": {
+            "tempC": 25,
+            "condition": "Pleasant & Mild",
+            "icon": "🌤️",
+            "rainProbability": 12,
+            "advice": "Comfortable casual attire and light footwear."
+          },
+          "stats": {
+            "totalTravelTimeMinutes": 45,
+            "walkingDistanceKm": 3.3,
+            "estimatedCost": 0
+          },
+          "activities": [
+            {
+              "id": "act-4-1",
+              "name": "Alleppey Backwater Shikara / Houseboat Cruise",
+              "category": "relaxation",
+              "description": "Glide quietly through narrow palm-fringed canals, duck paddocks, and paddy fields on a traditional thatched-roof Kettuvallam vessel.",
+              "startTime": "09:30",
+              "endTime": "11:30",
+              "durationMinutes": 120,
+              "estimatedCost": 1500,
+              "locationName": "Punnamada Jetty, Alleppey",
+              "coordinates": {
+                "lat": 9.5085,
+                "lng": 76.3533
+              },
+              "openingHours": "08:00 - 17:30",
+              "matchReason": "Selected for your interest in relaxed and beaches.",
+              "distanceFromPreviousKm": 0,
+              "transitDurationMinutes": 0,
+              "transitMode": "local taxi"
+            },
+            {
+              "id": "rest-4",
+              "name": "Afternoon Rejuvenation & Local Tea Tasting",
+              "category": "relaxation",
+              "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+              "startTime": "12:30",
+              "endTime": "14:00",
+              "durationMinutes": 90,
+              "estimatedCost": 150,
+              "locationName": "",
+              "coordinates": {
+                "lat": 9.5085,
+                "lng": 76.3533
+              },
+              "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+            },
+            {
+              "id": "act-4-2",
+              "name": "Marari Beach & Fisherman Village Visit",
+              "category": "relaxation",
+              "description": "An untouched, serene coconut-lined beach known for golden sands, fresh sea breeze, and peaceful strolls away from tourist crowds.",
+              "startTime": "14:00",
+              "endTime": "15:30",
+              "durationMinutes": 90,
+              "estimatedCost": 0,
+              "locationName": "Mararikulam",
+              "coordinates": {
+                "lat": 9.6015,
+                "lng": 76.2995
+              },
+              "openingHours": "Open 24 hours",
+              "matchReason": "Selected for your interest in relaxed and beaches.",
+              "distanceFromPreviousKm": 4.5,
+              "transitDurationMinutes": 20,
+              "transitMode": "local taxi"
+            }
+          ],
+          "meals": [
+            {
+              "type": "breakfast",
+              "restaurantName": "Kashi Art Cafe",
+              "cuisine": "Continental & Kerala Fusion",
+              "location": "Burgher Street, Fort Kochi",
+              "estimatedCostPerPerson": 350,
+              "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+            },
+            {
+              "type": "lunch",
+              "restaurantName": "Grand Pavilion (Traditional Sadya)",
+              "cuisine": "Authentic Kerala Traditional",
+              "location": "MG Road, Ernakulam",
+              "estimatedCostPerPerson": 400,
+              "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+            },
+            {
+              "type": "dinner",
+              "restaurantName": "Seagull Fort Kochi Deck",
+              "cuisine": "Coastal Kerala & Grills",
+              "location": "Calvathy Road, Fort Kochi",
+              "estimatedCostPerPerson": 650,
+              "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+            }
+          ],
+          "accommodation": {
+            "name": "Lake Palace Backwater Resort",
+            "type": "Backwater Resort",
+            "location": "Chungam, Alleppey",
+            "costPerNight": 6800,
+            "coordinates": {
+              "lat": 9.512,
+              "lng": 76.361
+            },
+            "rating": 4.7,
+            "rationale": "Direct canal access, authentic Kerala Ayurvedic spa, and traditional breakfast."
+          }
+        },
+        {
+          "dayNumber": 5,
+          "date": "2026-12-16",
+          "title": "Farewell & Return Journey",
+          "baseCity": "",
+          "theme": "Backwaters & Coastal Serenity",
+          "weatherForecast": {
+            "tempC": 25,
+            "condition": "Pleasant & Mild",
+            "icon": "🌤️",
+            "rainProbability": 12,
+            "advice": "Comfortable casual attire and light footwear."
+          },
+          "stats": {
+            "totalTravelTimeMinutes": 45,
+            "walkingDistanceKm": 3.2,
+            "estimatedCost": 0
+          },
+          "activities": [
+            {
+              "id": "act-5-1",
+              "name": "Traditional Kathakali & Kalaripayattu Martial Arts Show",
+              "category": "culture",
+              "description": "Watch ancient Kerala classical dance drama with vivid face painting, followed by thrilling Kalari martial arts weapon demonstrations.",
+              "startTime": "09:30",
+              "endTime": "11:00",
+              "durationMinutes": 90,
+              "estimatedCost": 400,
+              "locationName": "Kerala Kathakali Centre, Fort Kochi",
+              "coordinates": {
+                "lat": 9.9678,
+                "lng": 76.2445
+              },
+              "openingHours": "17:00 - 20:00",
+              "matchReason": "Selected for your interest in cultural and local culture.",
+              "distanceFromPreviousKm": 0,
+              "transitDurationMinutes": 0,
+              "transitMode": "local taxi"
+            },
+            {
+              "id": "rest-5",
+              "name": "Afternoon Rejuvenation & Local Tea Tasting",
+              "category": "relaxation",
+              "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+              "startTime": "12:30",
+              "endTime": "14:00",
+              "durationMinutes": 90,
+              "estimatedCost": 150,
+              "locationName": "",
+              "coordinates": {
+                "lat": 9.9678,
+                "lng": 76.2445
+              },
+              "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+            },
+            {
+              "id": "act-5-2",
+              "name": "Fort Kochi Heritage Walk & Chinese Fishing Nets",
+              "category": "culture",
+              "description": "Stroll past colonial Portuguese bungalows, David Hall, and witness fishermen lowering the 14th-century cantilevered Chinese fishing nets over the Arabian Sea at sunset.",
+              "startTime": "14:00",
+              "endTime": "16:00",
+              "durationMinutes": 120,
+              "estimatedCost": 100,
+              "locationName": "Fort Kochi Beach Promenade",
+              "coordinates": {
+                "lat": 9.9654,
+                "lng": 76.2427
+              },
+              "openingHours": "06:00 - 19:30",
+              "matchReason": "Selected for your interest in relaxed and historical places.",
+              "distanceFromPreviousKm": 4.5,
+              "transitDurationMinutes": 20,
+              "transitMode": "local taxi"
+            }
+          ],
+          "meals": [
+            {
+              "type": "breakfast",
+              "restaurantName": "Kashi Art Cafe",
+              "cuisine": "Continental & Kerala Fusion",
+              "location": "Burgher Street, Fort Kochi",
+              "estimatedCostPerPerson": 350,
+              "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+            },
+            {
+              "type": "lunch",
+              "restaurantName": "Grand Pavilion (Traditional Sadya)",
+              "cuisine": "Authentic Kerala Traditional",
+              "location": "MG Road, Ernakulam",
+              "estimatedCostPerPerson": 400,
+              "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+            },
+            {
+              "type": "dinner",
+              "restaurantName": "Seagull Fort Kochi Deck",
+              "cuisine": "Coastal Kerala & Grills",
+              "location": "Calvathy Road, Fort Kochi",
+              "estimatedCostPerPerson": 650,
+              "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+            }
+          ]
+        }
+      ],
+      "budgetBreakdown": {
+        "currency": "INR",
+        "totalPlanned": 118692,
+        "userBudget": 60000,
+        "remainingBuffer": -58692,
+        "status": "over-budget",
+        "categories": {
+          "transportation": {
+            "amount": 5400,
+            "percentage": 5,
+            "note": "Includes inter-city connections for 3 traveler(s)"
+          },
+          "accommodation": {
+            "amount": 58000,
+            "percentage": 49,
+            "note": "4 night(s) across selected locations"
+          },
+          "food": {
+            "amount": 21000,
+            "percentage": 18,
+            "note": "Breakfast, lunch, and regional dinner estimates"
+          },
+          "activities": {
+            "amount": 12750,
+            "percentage": 11,
+            "note": "Entry passes, sanctuary permits, and cultural shows"
+          },
+          "localTravel": {
+            "amount": 9000,
+            "percentage": 8,
+            "note": "Taxis, auto-rickshaws, and sightseeing transfers"
+          },
+          "miscellaneous": {
+            "amount": 3750,
+            "percentage": 3,
+            "note": "Tips, bottled water, souvenirs, and temple offerings"
+          },
+          "contingencyReserve": {
+            "amount": 8792,
+            "percentage": 7,
+            "note": "8% unallocated reserve for unexpected delays or spontaneous detours"
+          }
+        },
+        "budgetAlerts": [
+          "Current plan exceeds target budget by INR 58,692."
+        ],
+        "savingTips": [
+          "Switch to mid-range boutique stays or homestays.",
+          "Opt for local train or shared transit for inter-city travel.",
+          "Swap paid adventure tickets for scenic public walks and coastal viewpoints."
+        ]
+      },
+      "qualityScore": {
+        "overall": "Excellent",
+        "budgetFit": "Optimal",
+        "pace": "Relaxed",
+        "efficiency": "High",
+        "constraintMatchRate": 100,
+        "notes": [
+          "Zero circular backtracking on inter-city transfers",
+          "Daily walking load within target physical threshold",
+          "Realistic buffer periods between all scheduled stops"
+        ]
+      },
+      "checklist": [
+        {
+          "id": "c1",
+          "category": "documents",
+          "text": "Government Photo ID (Aadhaar / Passport / Voter ID)",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c2",
+          "category": "documents",
+          "text": "Train / Flight E-Tickets & Confirmation SMS",
+          "isDone": true,
+          "essential": true
+        },
+        {
+          "id": "c3",
+          "category": "documents",
+          "text": "Hotel & Homestay Booking vouchers",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c4",
+          "category": "clothing",
+          "text": "Light breathable cotton outfits & modest temple clothing",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c5",
+          "category": "gadgets",
+          "text": "Power bank (10,000+ mAh) & mobile charging cables",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c6",
+          "category": "health_safety",
+          "text": "Personal prescription medications & basic first-aid kit",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c7",
+          "category": "destination_specific",
+          "text": "Compact umbrella & insect repellent lotion for coastal backwaters",
+          "isDone": false,
+          "essential": false
+        },
+        {
+          "id": "c8",
+          "category": "clothing",
+          "text": "Light woolen cardigan or windcheater for cool hill evenings",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c9",
+          "category": "clothing",
+          "text": "Grip-sole walking shoes or trail sneakers",
+          "isDone": false,
+          "essential": true
+        },
+        {
+          "id": "c10",
+          "category": "clothing",
+          "text": "Traditional attire for Vedic temple entry (Dhoti / Saree / Kurta)",
+          "isDone": false,
+          "essential": true
+        }
+      ],
+      "status": "generated",
+      "version": 1,
+      "shareId": "share-npmqjin",
+      "isPublic": true,
+      "createdAt": "2026-10-06T17:42:41.505Z",
+      "updatedAt": "2026-10-06T17:42:41.505Z",
+      "transitOptions": {
+        "originToDestinationDistanceKm": 1090,
+        "availableTrains": [
+          {
+            "trainNumber": "17230",
+            "trainName": "Sabari Express",
+            "departureTime": "12:20 PM",
+            "arrivalTime": "12:55 PM (+1d)",
+            "duration": "24h 35m",
+            "originStation": "Secunderabad (SC)",
+            "destinationStation": "Ernakulam Town (ERN)",
+            "frequency": "Daily",
+            "classes": [
+              "2A",
+              "3A",
+              "SL"
+            ],
+            "fareRange": "₹620 - ₹2,450"
+          },
+          {
+            "trainNumber": "12644",
+            "trainName": "Swarna Jayanti Express",
+            "departureTime": "09:40 PM",
+            "arrivalTime": "08:35 PM (+1d)",
+            "duration": "22h 55m",
+            "originStation": "Secunderabad (SC)",
+            "destinationStation": "Ernakulam Jn (ERS)",
+            "frequency": "Fri only",
+            "classes": [
+              "1A",
+              "2A",
+              "3A",
+              "SL"
+            ],
+            "fareRange": "₹680 - ₹3,600"
+          }
+        ],
+        "availableFlights": [
+          {
+            "airline": "IndiGo",
+            "flightNumber": "6E-432",
+            "departureTime": "06:15 AM",
+            "arrivalTime": "08:05 AM",
+            "duration": "1h 50m (Direct)",
+            "fareRange": "₹3,400 - ₹4,800"
+          }
+        ],
+        "roadTravelDetails": {
+          "distanceKm": 1090,
+          "estimatedDriveTime": "19 - 21 hrs",
+          "recommendedHalts": [
+            "Kurnool (Breakfast)",
+            "Bangalore Bypass (Lunch)",
+            "Salem (Evening halt)"
+          ],
+          "tollEstimate": "₹1,240 FASTag"
+        },
+        "outbound": {
+          "direction": "outbound",
+          "title": "Outbound Journey:  → ",
+          "from": "Secunderabad Junction (SC)",
+          "to": "Ernakulam Town (ERN) / Ernakulam Jn (ERS)",
+          "distanceKm": 1090,
+          "guidance": {
+            "whenToStart": "Reach station by 11:30 AM (45 mins before Sabari Express departure at 12:20 PM)",
+            "whereToBoard": "Secunderabad Jn (SC) Platform 1 or 2",
+            "arrivalDetails": "Arrives Ernakulam Town at 12:55 PM next day. Prepaid taxi booth at East exit."
+          },
+          "trains": [
+            {
+              "trainNumber": "17230",
+              "trainName": "Sabari Express",
+              "departureTime": "12:20 PM",
+              "arrivalTime": "12:55 PM (+1d)",
+              "duration": "24h 35m",
+              "originStation": "Secunderabad (SC)",
+              "destinationStation": "Ernakulam Town (ERN)",
+              "frequency": "Daily",
+              "classes": [
+                "2A",
+                "3A",
+                "SL"
+              ],
+              "fareRange": "₹620 - ₹2,450"
+            },
+            {
+              "trainNumber": "12644",
+              "trainName": "Swarna Jayanti Express",
+              "departureTime": "09:40 PM",
+              "arrivalTime": "08:35 PM (+1d)",
+              "duration": "22h 55m",
+              "originStation": "Secunderabad (SC)",
+              "destinationStation": "Ernakulam Jn (ERS)",
+              "frequency": "Fri only",
+              "classes": [
+                "1A",
+                "2A",
+                "3A",
+                "SL"
+              ],
+              "fareRange": "₹680 - ₹3,600"
+            }
+          ],
+          "flights": [
+            {
+              "airline": "IndiGo",
+              "flightNumber": "6E-432",
+              "departureTime": "06:15 AM",
+              "arrivalTime": "08:05 AM",
+              "duration": "1h 50m (Direct)",
+              "fareRange": "₹3,400 - ₹4,800"
+            }
+          ],
+          "roadDetails": {
+            "distanceKm": 1090,
+            "estimatedDriveTime": "19 - 21 hrs",
+            "recommendedHalts": [
+              "Kurnool (Breakfast)",
+              "Bangalore Bypass (Lunch)",
+              "Salem (Evening halt)"
+            ],
+            "tollEstimate": "₹1,240 FASTag"
+          }
+        },
+        "returnJourney": {
+          "direction": "return",
+          "title": "Return Journey:  → ",
+          "from": "Ernakulam Town (ERN) / Ernakulam Jn (ERS)",
+          "to": "Secunderabad Junction (SC)",
+          "distanceKm": 1090,
+          "guidance": {
+            "whenToStart": "Complete checkout by 09:30 AM on Day 5, reach ERN station by 10:30 AM",
+            "whereToBoard": "Ernakulam Town (ERN) Platform 1 (Main entrance facing Kaloor)",
+            "arrivalDetails": "Arrives Secunderabad (SC) at 12:40 PM on the following afternoon",
+            "checkOutBuffer": "Allow 1.5 hrs transfer time if returning from Alleppey/Kumarakom backwaters to Ernakulam"
+          },
+          "trains": [
+            {
+              "trainNumber": "17229",
+              "trainName": "Sabari Express (Return)",
+              "departureTime": "11:20 AM",
+              "arrivalTime": "12:40 PM (+1d)",
+              "duration": "25h 20m",
+              "originStation": "Ernakulam Town (ERN)",
+              "destinationStation": "Secunderabad (SC)",
+              "frequency": "Daily",
+              "classes": [
+                "2A",
+                "3A",
+                "SL"
+              ],
+              "fareRange": "₹620 - ₹2,450"
+            },
+            {
+              "trainNumber": "12643",
+              "trainName": "Swarna Jayanti Express (Return)",
+              "departureTime": "09:30 PM",
+              "arrivalTime": "08:20 PM (+1d)",
+              "duration": "22h 50m",
+              "originStation": "Ernakulam Jn (ERS)",
+              "destinationStation": "Secunderabad (SC)",
+              "frequency": "Mon only",
+              "classes": [
+                "1A",
+                "2A",
+                "3A",
+                "SL"
+              ],
+              "fareRange": "₹680 - ₹3,600"
+            }
+          ],
+          "flights": [
+            {
+              "airline": "IndiGo",
+              "flightNumber": "6E-433",
+              "departureTime": "08:45 PM",
+              "arrivalTime": "10:30 PM",
+              "duration": "1h 45m (Direct)",
+              "fareRange": "₹3,500 - ₹5,100"
+            }
+          ],
+          "roadDetails": {
+            "distanceKm": 1090,
+            "estimatedDriveTime": "19 - 21 hrs via NH544 & NH44",
+            "recommendedHalts": [
+              "Palakkad Gap",
+              "Hosur / Bangalore Bypass",
+              "Anantapur"
+            ],
+            "tollEstimate": "₹1,240 FASTag"
+          }
+        }
+      },
+      "destinationOverview": {
+        "totalDistanceCoveredKm": 1090,
+        "signatureNearbyPlaces": [
+          {
+            "name": "Fort Kochi Heritage Area",
+            "category": "Colonial & Art",
+            "distanceFromBaseKm": 14,
+            "driveTime": "35 mins",
+            "highlight": "Chinese Fishing Nets, Jew Town & Princess Street cafes",
+            "bestTime": "04:30 PM - 07:00 PM"
+          },
+          {
+            "name": "Munnar Tea Valleys",
+            "category": "Hill Station & Nature",
+            "distanceFromBaseKm": 128,
+            "driveTime": "3.5 hrs",
+            "highlight": "Lockhart Gap viewpoints, cascading tea slopes & waterfalls",
+            "bestTime": "Early Morning / Sunrise"
+          },
+          {
+            "name": "Alleppey Backwaters & Canals",
+            "category": "Lagoon & Cruise",
+            "distanceFromBaseKm": 53,
+            "driveTime": "1h 20 mins",
+            "highlight": "Private Shikara country boat tours through paddy waterways",
+            "bestTime": "11:00 AM - 04:30 PM"
+          },
+          {
+            "name": "Marari Pristine Beach",
+            "category": "Coastal Relaxation",
+            "distanceFromBaseKm": 42,
+            "driveTime": "1 hr",
+            "highlight": "Quiet palm-shaded shoreline with fresh catch shacks",
+            "bestTime": "05:00 PM - 06:45 PM Sunset"
+          }
+        ],
+        "bestSeasonToVisit": "October to March (Pleasant weather, 22°C - 30°C)",
+        "localCuisinePicks": [
+          "Appam with Vegetable Stew",
+          "Kerala Karimeen Pollichathu",
+          "Malabar Parotta",
+          "Filter Kaapi"
+        ],
+        "essentialLocalTips": [
+          "Book Sabari Express tickets 3 weeks prior due to weekend passenger demand.",
+          "Pre-dawn temple visits require traditional attire (Dhoti / Saree or Salwar).",
+          "Hire a verified local driver for the Kochi to Munnar ghat roads."
+        ]
+      }
+    },
+    {
       "id": "trip-1790870023168-shiz2",
       "userId": "usr-1790851076937-hgvx",
       "title": "srirangam Adventure",
@@ -12237,6 +13262,1038 @@
           }
         }
       }
+    ],
+    "trip-1791308561505-1rqm5": [
+      {
+        "versionNumber": 1,
+        "timestamp": "2026-10-06T17:42:41.538Z",
+        "changeSummary": "Initial AI-generated itinerary",
+        "snapshot": {
+          "id": "trip-1791308561505-1rqm5",
+          "userId": "demo-user-1",
+          "title": " Adventure",
+          "destination": "",
+          "origin": "",
+          "startDate": "2026-12-12",
+          "endDate": "2026-12-16",
+          "durationDays": 5,
+          "travelers": {
+            "adults": 3,
+            "children": 0,
+            "infants": 0,
+            "partyType": "friends",
+            "customNotes": ""
+          },
+          "budget": {
+            "tier": "moderate",
+            "total": 60000,
+            "currency": "INR",
+            "includesTravelToOrigin": true,
+            "contingencyPercent": 8
+          },
+          "travelStyles": [
+            "relaxed",
+            "nature",
+            "food-focused"
+          ],
+          "interests": [
+            "beaches",
+            "nature",
+            "temples",
+            "food"
+          ],
+          "accommodationPreference": {
+            "type": "hotel",
+            "features": [
+              "central-location",
+              "cleanliness"
+            ]
+          },
+          "transportPreferences": {
+            "primary": "train",
+            "local": "local taxi",
+            "priority": "balanced"
+          },
+          "specialRequirements": {
+            "hardConstraints": [
+              "Pre-dawn temple pooja visit, vegetarian culinary focus"
+            ],
+            "softPreferences": [
+              "Balanced daylight pace",
+              "Scenic photo halts"
+            ]
+          },
+          "aiExplanations": [
+            "We structured the destinations linearly () to minimize backtracking across the Western Ghats.",
+            "Accommodations were selected near central districts to cut daily transit taxi time by over 45 minutes each day.",
+            "We scheduled an 8% contingency safety buffer in the budget so unexpected detours or spontaneous boat rides won't stress your finances.",
+            "We satisfied your constraint \"Pre-dawn temple pooja visit, vegetarian culinary focus\" with exact early scheduling."
+          ],
+          "routeSequence": [
+            ""
+          ],
+          "routeSegments": [
+            {
+              "from": "",
+              "to": "",
+              "distanceKm": 850,
+              "estimatedTime": "15h 30m",
+              "mode": "train",
+              "costEstimate": 1800,
+              "notes": "Direct connection from "
+            }
+          ],
+          "days": [
+            {
+              "dayNumber": 1,
+              "date": "2026-12-12",
+              "title": "Arrival in  & Orientation",
+              "baseCity": "",
+              "theme": "Heritage & First Impressions",
+              "weatherForecast": {
+                "tempC": 25,
+                "condition": "Pleasant & Mild",
+                "icon": "🌤️",
+                "rainProbability": 12,
+                "advice": "Comfortable casual attire and light footwear."
+              },
+              "stats": {
+                "totalTravelTimeMinutes": 45,
+                "walkingDistanceKm": 3.8,
+                "estimatedCost": 0
+              },
+              "activities": [
+                {
+                  "id": "act-1-1",
+                  "name": "Fort Kochi Heritage Walk & Chinese Fishing Nets",
+                  "category": "culture",
+                  "description": "Stroll past colonial Portuguese bungalows, David Hall, and witness fishermen lowering the 14th-century cantilevered Chinese fishing nets over the Arabian Sea at sunset.",
+                  "startTime": "05:45",
+                  "endTime": "07:45",
+                  "durationMinutes": 120,
+                  "estimatedCost": 100,
+                  "locationName": "Fort Kochi Beach Promenade",
+                  "coordinates": {
+                    "lat": 9.9654,
+                    "lng": 76.2427
+                  },
+                  "openingHours": "06:00 - 19:30",
+                  "matchReason": "Selected for your interest in relaxed and historical places.",
+                  "distanceFromPreviousKm": 0,
+                  "transitDurationMinutes": 0,
+                  "transitMode": "local taxi"
+                },
+                {
+                  "id": "rest-1",
+                  "name": "Afternoon Rejuvenation & Local Tea Tasting",
+                  "category": "relaxation",
+                  "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+                  "startTime": "12:30",
+                  "endTime": "14:00",
+                  "durationMinutes": 90,
+                  "estimatedCost": 150,
+                  "locationName": "",
+                  "coordinates": {
+                    "lat": 9.9654,
+                    "lng": 76.2427
+                  },
+                  "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+                },
+                {
+                  "id": "act-1-2",
+                  "name": "Mattancherry Palace (Dutch Palace) & Jewish Synagogue",
+                  "category": "attraction",
+                  "description": "Explore the 16th-century palace adorned with rare mythological murals and the serene 1568 Paradesi Synagogue in Jew Town with antique Belgian crystal chandeliers.",
+                  "startTime": "14:00",
+                  "endTime": "15:30",
+                  "durationMinutes": 90,
+                  "estimatedCost": 150,
+                  "locationName": "Jew Town, Mattancherry",
+                  "coordinates": {
+                    "lat": 9.9579,
+                    "lng": 76.2598
+                  },
+                  "openingHours": "09:00 - 17:00 (Closed Fri)",
+                  "matchReason": "Selected for your interest in cultural and history.",
+                  "distanceFromPreviousKm": 4.5,
+                  "transitDurationMinutes": 20,
+                  "transitMode": "local taxi"
+                }
+              ],
+              "meals": [
+                {
+                  "type": "breakfast",
+                  "restaurantName": "Kashi Art Cafe",
+                  "cuisine": "Continental & Kerala Fusion",
+                  "location": "Burgher Street, Fort Kochi",
+                  "estimatedCostPerPerson": 350,
+                  "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+                },
+                {
+                  "type": "lunch",
+                  "restaurantName": "Grand Pavilion (Traditional Sadya)",
+                  "cuisine": "Authentic Kerala Traditional",
+                  "location": "MG Road, Ernakulam",
+                  "estimatedCostPerPerson": 400,
+                  "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+                },
+                {
+                  "type": "dinner",
+                  "restaurantName": "Seagull Fort Kochi Deck",
+                  "cuisine": "Coastal Kerala & Grills",
+                  "location": "Calvathy Road, Fort Kochi",
+                  "estimatedCostPerPerson": 650,
+                  "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+                }
+              ],
+              "accommodation": {
+                "name": "Brunton Boatyard - CGH Earth",
+                "type": "Luxury Heritage Hotel",
+                "location": "Fort Kochi Waterfront",
+                "costPerNight": 12500,
+                "coordinates": {
+                  "lat": 9.968,
+                  "lng": 76.241
+                },
+                "rating": 4.8,
+                "rationale": "Historic harbor views, zero-plastic eco-luxury, walking distance to heritage sites."
+              }
+            },
+            {
+              "dayNumber": 2,
+              "date": "2026-12-13",
+              "title": "Immersive Discovery in ",
+              "baseCity": "",
+              "theme": "Cultural Wonders & Local Aromas",
+              "weatherForecast": {
+                "tempC": 25,
+                "condition": "Pleasant & Mild",
+                "icon": "🌤️",
+                "rainProbability": 12,
+                "advice": "Comfortable casual attire and light footwear."
+              },
+              "stats": {
+                "totalTravelTimeMinutes": 45,
+                "walkingDistanceKm": 2.7,
+                "estimatedCost": 0
+              },
+              "activities": [
+                {
+                  "id": "act-2-1",
+                  "name": "Chottanikkara Bhagavathy Temple",
+                  "category": "spiritual",
+                  "description": "One of the most revered ancient Vedic temples in Kerala dedicated to Goddess Rajarajeswari, known for its tranquil morning pooja and traditional temple architecture.",
+                  "startTime": "09:30",
+                  "endTime": "10:45",
+                  "durationMinutes": 75,
+                  "estimatedCost": 50,
+                  "locationName": "Chottanikkara",
+                  "coordinates": {
+                    "lat": 9.9328,
+                    "lng": 76.3917
+                  },
+                  "openingHours": "04:00 - 12:00, 16:00 - 20:30",
+                  "matchReason": "Selected for your interest in spiritual and temples.",
+                  "distanceFromPreviousKm": 0,
+                  "transitDurationMinutes": 0,
+                  "transitMode": "local taxi"
+                },
+                {
+                  "id": "rest-2",
+                  "name": "Afternoon Rejuvenation & Local Tea Tasting",
+                  "category": "relaxation",
+                  "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+                  "startTime": "12:30",
+                  "endTime": "14:00",
+                  "durationMinutes": 90,
+                  "estimatedCost": 150,
+                  "locationName": "",
+                  "coordinates": {
+                    "lat": 9.9328,
+                    "lng": 76.3917
+                  },
+                  "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+                },
+                {
+                  "id": "act-2-2",
+                  "name": "Munnar Tea Gardens & Lockhart Viewpoint",
+                  "category": "nature",
+                  "description": "Panoramic views across emerald rolling tea plantations, mist-covered ravines, and scenic photography spots overlooking the Sahyadri mountains.",
+                  "startTime": "14:00",
+                  "endTime": "16:00",
+                  "durationMinutes": 120,
+                  "estimatedCost": 200,
+                  "locationName": "Lockhart Gap, Munnar",
+                  "coordinates": {
+                    "lat": 10.0456,
+                    "lng": 77.0987
+                  },
+                  "openingHours": "07:00 - 18:00",
+                  "matchReason": "Selected for your interest in nature and nature.",
+                  "distanceFromPreviousKm": 4.5,
+                  "transitDurationMinutes": 20,
+                  "transitMode": "local taxi"
+                }
+              ],
+              "meals": [
+                {
+                  "type": "breakfast",
+                  "restaurantName": "Kashi Art Cafe",
+                  "cuisine": "Continental & Kerala Fusion",
+                  "location": "Burgher Street, Fort Kochi",
+                  "estimatedCostPerPerson": 350,
+                  "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+                },
+                {
+                  "type": "lunch",
+                  "restaurantName": "Grand Pavilion (Traditional Sadya)",
+                  "cuisine": "Authentic Kerala Traditional",
+                  "location": "MG Road, Ernakulam",
+                  "estimatedCostPerPerson": 400,
+                  "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+                },
+                {
+                  "type": "dinner",
+                  "restaurantName": "Seagull Fort Kochi Deck",
+                  "cuisine": "Coastal Kerala & Grills",
+                  "location": "Calvathy Road, Fort Kochi",
+                  "estimatedCostPerPerson": 650,
+                  "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+                }
+              ],
+              "accommodation": {
+                "name": "Forte Kochi Boutique Hotel",
+                "type": "Mid-Range Heritage Boutique",
+                "location": "Princess Street, Fort Kochi",
+                "costPerNight": 5500,
+                "coordinates": {
+                  "lat": 9.966,
+                  "lng": 76.2435
+                },
+                "rating": 4.6,
+                "rationale": "Exceptional central location, colonial charm, great value for families and couples."
+              }
+            },
+            {
+              "dayNumber": 3,
+              "date": "2026-12-14",
+              "title": "Immersive Discovery in ",
+              "baseCity": "",
+              "theme": "Verdant Nature & Panoramic Trails",
+              "weatherForecast": {
+                "tempC": 25,
+                "condition": "Pleasant & Mild",
+                "icon": "🌤️",
+                "rainProbability": 12,
+                "advice": "Comfortable casual attire and light footwear."
+              },
+              "stats": {
+                "totalTravelTimeMinutes": 45,
+                "walkingDistanceKm": 3.7,
+                "estimatedCost": 0
+              },
+              "activities": [
+                {
+                  "id": "act-3-1",
+                  "name": "Eravikulam National Park (Rajamalai)",
+                  "category": "nature",
+                  "description": "Home to the endangered Nilgiri Tahr and the highest peak in South India (Anamudi). Serene hill trails amidst shola grasslands.",
+                  "startTime": "09:30",
+                  "endTime": "11:30",
+                  "durationMinutes": 120,
+                  "estimatedCost": 450,
+                  "locationName": "Eravikulam, Munnar",
+                  "coordinates": {
+                    "lat": 10.15,
+                    "lng": 77.06
+                  },
+                  "openingHours": "07:30 - 16:00",
+                  "matchReason": "Selected for your interest in nature and wildlife.",
+                  "distanceFromPreviousKm": 0,
+                  "transitDurationMinutes": 0,
+                  "transitMode": "local taxi"
+                },
+                {
+                  "id": "rest-3",
+                  "name": "Afternoon Rejuvenation & Local Tea Tasting",
+                  "category": "relaxation",
+                  "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+                  "startTime": "12:30",
+                  "endTime": "14:00",
+                  "durationMinutes": 90,
+                  "estimatedCost": 150,
+                  "locationName": "",
+                  "coordinates": {
+                    "lat": 10.15,
+                    "lng": 77.06
+                  },
+                  "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+                },
+                {
+                  "id": "act-3-2",
+                  "name": "Periyar Wildlife Sanctuary Boat Safari",
+                  "category": "adventure",
+                  "description": "A two-hour tranquil lake cruise through the dense evergreen forest of Periyar tiger reserve, with frequent sightings of wild elephants, sambar, and hornbills.",
+                  "startTime": "14:00",
+                  "endTime": "16:00",
+                  "durationMinutes": 120,
+                  "estimatedCost": 550,
+                  "locationName": "Thekkady Lake",
+                  "coordinates": {
+                    "lat": 9.58,
+                    "lng": 77.17
+                  },
+                  "openingHours": "07:30 - 15:30",
+                  "matchReason": "Selected for your interest in nature and wildlife.",
+                  "distanceFromPreviousKm": 4.5,
+                  "transitDurationMinutes": 20,
+                  "transitMode": "local taxi"
+                }
+              ],
+              "meals": [
+                {
+                  "type": "breakfast",
+                  "restaurantName": "Kashi Art Cafe",
+                  "cuisine": "Continental & Kerala Fusion",
+                  "location": "Burgher Street, Fort Kochi",
+                  "estimatedCostPerPerson": 350,
+                  "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+                },
+                {
+                  "type": "lunch",
+                  "restaurantName": "Grand Pavilion (Traditional Sadya)",
+                  "cuisine": "Authentic Kerala Traditional",
+                  "location": "MG Road, Ernakulam",
+                  "estimatedCostPerPerson": 400,
+                  "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+                },
+                {
+                  "type": "dinner",
+                  "restaurantName": "Seagull Fort Kochi Deck",
+                  "cuisine": "Coastal Kerala & Grills",
+                  "location": "Calvathy Road, Fort Kochi",
+                  "estimatedCostPerPerson": 650,
+                  "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+                }
+              ],
+              "accommodation": {
+                "name": "Tea Valley Resort Munnar",
+                "type": "Nature Resort",
+                "location": "Pothamedu, Munnar",
+                "costPerNight": 4200,
+                "coordinates": {
+                  "lat": 10.061,
+                  "lng": 77.042
+                },
+                "rating": 4.5,
+                "rationale": "Overlooks deep tea valley, peaceful environment with mountain trails."
+              }
+            },
+            {
+              "dayNumber": 4,
+              "date": "2026-12-15",
+              "title": "Immersive Discovery in ",
+              "baseCity": "",
+              "theme": "Backwaters & Coastal Serenity",
+              "weatherForecast": {
+                "tempC": 25,
+                "condition": "Pleasant & Mild",
+                "icon": "🌤️",
+                "rainProbability": 12,
+                "advice": "Comfortable casual attire and light footwear."
+              },
+              "stats": {
+                "totalTravelTimeMinutes": 45,
+                "walkingDistanceKm": 3.3,
+                "estimatedCost": 0
+              },
+              "activities": [
+                {
+                  "id": "act-4-1",
+                  "name": "Alleppey Backwater Shikara / Houseboat Cruise",
+                  "category": "relaxation",
+                  "description": "Glide quietly through narrow palm-fringed canals, duck paddocks, and paddy fields on a traditional thatched-roof Kettuvallam vessel.",
+                  "startTime": "09:30",
+                  "endTime": "11:30",
+                  "durationMinutes": 120,
+                  "estimatedCost": 1500,
+                  "locationName": "Punnamada Jetty, Alleppey",
+                  "coordinates": {
+                    "lat": 9.5085,
+                    "lng": 76.3533
+                  },
+                  "openingHours": "08:00 - 17:30",
+                  "matchReason": "Selected for your interest in relaxed and beaches.",
+                  "distanceFromPreviousKm": 0,
+                  "transitDurationMinutes": 0,
+                  "transitMode": "local taxi"
+                },
+                {
+                  "id": "rest-4",
+                  "name": "Afternoon Rejuvenation & Local Tea Tasting",
+                  "category": "relaxation",
+                  "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+                  "startTime": "12:30",
+                  "endTime": "14:00",
+                  "durationMinutes": 90,
+                  "estimatedCost": 150,
+                  "locationName": "",
+                  "coordinates": {
+                    "lat": 9.5085,
+                    "lng": 76.3533
+                  },
+                  "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+                },
+                {
+                  "id": "act-4-2",
+                  "name": "Marari Beach & Fisherman Village Visit",
+                  "category": "relaxation",
+                  "description": "An untouched, serene coconut-lined beach known for golden sands, fresh sea breeze, and peaceful strolls away from tourist crowds.",
+                  "startTime": "14:00",
+                  "endTime": "15:30",
+                  "durationMinutes": 90,
+                  "estimatedCost": 0,
+                  "locationName": "Mararikulam",
+                  "coordinates": {
+                    "lat": 9.6015,
+                    "lng": 76.2995
+                  },
+                  "openingHours": "Open 24 hours",
+                  "matchReason": "Selected for your interest in relaxed and beaches.",
+                  "distanceFromPreviousKm": 4.5,
+                  "transitDurationMinutes": 20,
+                  "transitMode": "local taxi"
+                }
+              ],
+              "meals": [
+                {
+                  "type": "breakfast",
+                  "restaurantName": "Kashi Art Cafe",
+                  "cuisine": "Continental & Kerala Fusion",
+                  "location": "Burgher Street, Fort Kochi",
+                  "estimatedCostPerPerson": 350,
+                  "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+                },
+                {
+                  "type": "lunch",
+                  "restaurantName": "Grand Pavilion (Traditional Sadya)",
+                  "cuisine": "Authentic Kerala Traditional",
+                  "location": "MG Road, Ernakulam",
+                  "estimatedCostPerPerson": 400,
+                  "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+                },
+                {
+                  "type": "dinner",
+                  "restaurantName": "Seagull Fort Kochi Deck",
+                  "cuisine": "Coastal Kerala & Grills",
+                  "location": "Calvathy Road, Fort Kochi",
+                  "estimatedCostPerPerson": 650,
+                  "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+                }
+              ],
+              "accommodation": {
+                "name": "Lake Palace Backwater Resort",
+                "type": "Backwater Resort",
+                "location": "Chungam, Alleppey",
+                "costPerNight": 6800,
+                "coordinates": {
+                  "lat": 9.512,
+                  "lng": 76.361
+                },
+                "rating": 4.7,
+                "rationale": "Direct canal access, authentic Kerala Ayurvedic spa, and traditional breakfast."
+              }
+            },
+            {
+              "dayNumber": 5,
+              "date": "2026-12-16",
+              "title": "Farewell & Return Journey",
+              "baseCity": "",
+              "theme": "Backwaters & Coastal Serenity",
+              "weatherForecast": {
+                "tempC": 25,
+                "condition": "Pleasant & Mild",
+                "icon": "🌤️",
+                "rainProbability": 12,
+                "advice": "Comfortable casual attire and light footwear."
+              },
+              "stats": {
+                "totalTravelTimeMinutes": 45,
+                "walkingDistanceKm": 3.2,
+                "estimatedCost": 0
+              },
+              "activities": [
+                {
+                  "id": "act-5-1",
+                  "name": "Traditional Kathakali & Kalaripayattu Martial Arts Show",
+                  "category": "culture",
+                  "description": "Watch ancient Kerala classical dance drama with vivid face painting, followed by thrilling Kalari martial arts weapon demonstrations.",
+                  "startTime": "09:30",
+                  "endTime": "11:00",
+                  "durationMinutes": 90,
+                  "estimatedCost": 400,
+                  "locationName": "Kerala Kathakali Centre, Fort Kochi",
+                  "coordinates": {
+                    "lat": 9.9678,
+                    "lng": 76.2445
+                  },
+                  "openingHours": "17:00 - 20:00",
+                  "matchReason": "Selected for your interest in cultural and local culture.",
+                  "distanceFromPreviousKm": 0,
+                  "transitDurationMinutes": 0,
+                  "transitMode": "local taxi"
+                },
+                {
+                  "id": "rest-5",
+                  "name": "Afternoon Rejuvenation & Local Tea Tasting",
+                  "category": "relaxation",
+                  "description": "Savor organic local tea blends and traditional banana fritters; take a slow unhurried rest.",
+                  "startTime": "12:30",
+                  "endTime": "14:00",
+                  "durationMinutes": 90,
+                  "estimatedCost": 150,
+                  "locationName": "",
+                  "coordinates": {
+                    "lat": 9.9678,
+                    "lng": 76.2445
+                  },
+                  "matchReason": "Structured downtime to honor your relaxed, unhurried travel preference."
+                },
+                {
+                  "id": "act-5-2",
+                  "name": "Fort Kochi Heritage Walk & Chinese Fishing Nets",
+                  "category": "culture",
+                  "description": "Stroll past colonial Portuguese bungalows, David Hall, and witness fishermen lowering the 14th-century cantilevered Chinese fishing nets over the Arabian Sea at sunset.",
+                  "startTime": "14:00",
+                  "endTime": "16:00",
+                  "durationMinutes": 120,
+                  "estimatedCost": 100,
+                  "locationName": "Fort Kochi Beach Promenade",
+                  "coordinates": {
+                    "lat": 9.9654,
+                    "lng": 76.2427
+                  },
+                  "openingHours": "06:00 - 19:30",
+                  "matchReason": "Selected for your interest in relaxed and historical places.",
+                  "distanceFromPreviousKm": 4.5,
+                  "transitDurationMinutes": 20,
+                  "transitMode": "local taxi"
+                }
+              ],
+              "meals": [
+                {
+                  "type": "breakfast",
+                  "restaurantName": "Kashi Art Cafe",
+                  "cuisine": "Continental & Kerala Fusion",
+                  "location": "Burgher Street, Fort Kochi",
+                  "estimatedCostPerPerson": 350,
+                  "highlightDish": "Appam with Coconut Stew & Fresh Roast Coffee"
+                },
+                {
+                  "type": "lunch",
+                  "restaurantName": "Grand Pavilion (Traditional Sadya)",
+                  "cuisine": "Authentic Kerala Traditional",
+                  "location": "MG Road, Ernakulam",
+                  "estimatedCostPerPerson": 400,
+                  "highlightDish": "Banana Leaf Vegetarian Sadya with Payasam"
+                },
+                {
+                  "type": "dinner",
+                  "restaurantName": "Seagull Fort Kochi Deck",
+                  "cuisine": "Coastal Kerala & Grills",
+                  "location": "Calvathy Road, Fort Kochi",
+                  "estimatedCostPerPerson": 650,
+                  "highlightDish": "Karimeen Pollichathu & Malabar Parotta"
+                }
+              ]
+            }
+          ],
+          "budgetBreakdown": {
+            "currency": "INR",
+            "totalPlanned": 118692,
+            "userBudget": 60000,
+            "remainingBuffer": -58692,
+            "status": "over-budget",
+            "categories": {
+              "transportation": {
+                "amount": 5400,
+                "percentage": 5,
+                "note": "Includes inter-city connections for 3 traveler(s)"
+              },
+              "accommodation": {
+                "amount": 58000,
+                "percentage": 49,
+                "note": "4 night(s) across selected locations"
+              },
+              "food": {
+                "amount": 21000,
+                "percentage": 18,
+                "note": "Breakfast, lunch, and regional dinner estimates"
+              },
+              "activities": {
+                "amount": 12750,
+                "percentage": 11,
+                "note": "Entry passes, sanctuary permits, and cultural shows"
+              },
+              "localTravel": {
+                "amount": 9000,
+                "percentage": 8,
+                "note": "Taxis, auto-rickshaws, and sightseeing transfers"
+              },
+              "miscellaneous": {
+                "amount": 3750,
+                "percentage": 3,
+                "note": "Tips, bottled water, souvenirs, and temple offerings"
+              },
+              "contingencyReserve": {
+                "amount": 8792,
+                "percentage": 7,
+                "note": "8% unallocated reserve for unexpected delays or spontaneous detours"
+              }
+            },
+            "budgetAlerts": [
+              "Current plan exceeds target budget by INR 58,692."
+            ],
+            "savingTips": [
+              "Switch to mid-range boutique stays or homestays.",
+              "Opt for local train or shared transit for inter-city travel.",
+              "Swap paid adventure tickets for scenic public walks and coastal viewpoints."
+            ]
+          },
+          "qualityScore": {
+            "overall": "Excellent",
+            "budgetFit": "Optimal",
+            "pace": "Relaxed",
+            "efficiency": "High",
+            "constraintMatchRate": 100,
+            "notes": [
+              "Zero circular backtracking on inter-city transfers",
+              "Daily walking load within target physical threshold",
+              "Realistic buffer periods between all scheduled stops"
+            ]
+          },
+          "checklist": [
+            {
+              "id": "c1",
+              "category": "documents",
+              "text": "Government Photo ID (Aadhaar / Passport / Voter ID)",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c2",
+              "category": "documents",
+              "text": "Train / Flight E-Tickets & Confirmation SMS",
+              "isDone": true,
+              "essential": true
+            },
+            {
+              "id": "c3",
+              "category": "documents",
+              "text": "Hotel & Homestay Booking vouchers",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c4",
+              "category": "clothing",
+              "text": "Light breathable cotton outfits & modest temple clothing",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c5",
+              "category": "gadgets",
+              "text": "Power bank (10,000+ mAh) & mobile charging cables",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c6",
+              "category": "health_safety",
+              "text": "Personal prescription medications & basic first-aid kit",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c7",
+              "category": "destination_specific",
+              "text": "Compact umbrella & insect repellent lotion for coastal backwaters",
+              "isDone": false,
+              "essential": false
+            },
+            {
+              "id": "c8",
+              "category": "clothing",
+              "text": "Light woolen cardigan or windcheater for cool hill evenings",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c9",
+              "category": "clothing",
+              "text": "Grip-sole walking shoes or trail sneakers",
+              "isDone": false,
+              "essential": true
+            },
+            {
+              "id": "c10",
+              "category": "clothing",
+              "text": "Traditional attire for Vedic temple entry (Dhoti / Saree / Kurta)",
+              "isDone": false,
+              "essential": true
+            }
+          ],
+          "status": "generated",
+          "version": 1,
+          "shareId": "share-npmqjin",
+          "isPublic": true,
+          "createdAt": "2026-10-06T17:42:41.505Z",
+          "updatedAt": "2026-10-06T17:42:41.505Z",
+          "transitOptions": {
+            "originToDestinationDistanceKm": 1090,
+            "availableTrains": [
+              {
+                "trainNumber": "17230",
+                "trainName": "Sabari Express",
+                "departureTime": "12:20 PM",
+                "arrivalTime": "12:55 PM (+1d)",
+                "duration": "24h 35m",
+                "originStation": "Secunderabad (SC)",
+                "destinationStation": "Ernakulam Town (ERN)",
+                "frequency": "Daily",
+                "classes": [
+                  "2A",
+                  "3A",
+                  "SL"
+                ],
+                "fareRange": "₹620 - ₹2,450"
+              },
+              {
+                "trainNumber": "12644",
+                "trainName": "Swarna Jayanti Express",
+                "departureTime": "09:40 PM",
+                "arrivalTime": "08:35 PM (+1d)",
+                "duration": "22h 55m",
+                "originStation": "Secunderabad (SC)",
+                "destinationStation": "Ernakulam Jn (ERS)",
+                "frequency": "Fri only",
+                "classes": [
+                  "1A",
+                  "2A",
+                  "3A",
+                  "SL"
+                ],
+                "fareRange": "₹680 - ₹3,600"
+              }
+            ],
+            "availableFlights": [
+              {
+                "airline": "IndiGo",
+                "flightNumber": "6E-432",
+                "departureTime": "06:15 AM",
+                "arrivalTime": "08:05 AM",
+                "duration": "1h 50m (Direct)",
+                "fareRange": "₹3,400 - ₹4,800"
+              }
+            ],
+            "roadTravelDetails": {
+              "distanceKm": 1090,
+              "estimatedDriveTime": "19 - 21 hrs",
+              "recommendedHalts": [
+                "Kurnool (Breakfast)",
+                "Bangalore Bypass (Lunch)",
+                "Salem (Evening halt)"
+              ],
+              "tollEstimate": "₹1,240 FASTag"
+            },
+            "outbound": {
+              "direction": "outbound",
+              "title": "Outbound Journey:  → ",
+              "from": "Secunderabad Junction (SC)",
+              "to": "Ernakulam Town (ERN) / Ernakulam Jn (ERS)",
+              "distanceKm": 1090,
+              "guidance": {
+                "whenToStart": "Reach station by 11:30 AM (45 mins before Sabari Express departure at 12:20 PM)",
+                "whereToBoard": "Secunderabad Jn (SC) Platform 1 or 2",
+                "arrivalDetails": "Arrives Ernakulam Town at 12:55 PM next day. Prepaid taxi booth at East exit."
+              },
+              "trains": [
+                {
+                  "trainNumber": "17230",
+                  "trainName": "Sabari Express",
+                  "departureTime": "12:20 PM",
+                  "arrivalTime": "12:55 PM (+1d)",
+                  "duration": "24h 35m",
+                  "originStation": "Secunderabad (SC)",
+                  "destinationStation": "Ernakulam Town (ERN)",
+                  "frequency": "Daily",
+                  "classes": [
+                    "2A",
+                    "3A",
+                    "SL"
+                  ],
+                  "fareRange": "₹620 - ₹2,450"
+                },
+                {
+                  "trainNumber": "12644",
+                  "trainName": "Swarna Jayanti Express",
+                  "departureTime": "09:40 PM",
+                  "arrivalTime": "08:35 PM (+1d)",
+                  "duration": "22h 55m",
+                  "originStation": "Secunderabad (SC)",
+                  "destinationStation": "Ernakulam Jn (ERS)",
+                  "frequency": "Fri only",
+                  "classes": [
+                    "1A",
+                    "2A",
+                    "3A",
+                    "SL"
+                  ],
+                  "fareRange": "₹680 - ₹3,600"
+                }
+              ],
+              "flights": [
+                {
+                  "airline": "IndiGo",
+                  "flightNumber": "6E-432",
+                  "departureTime": "06:15 AM",
+                  "arrivalTime": "08:05 AM",
+                  "duration": "1h 50m (Direct)",
+                  "fareRange": "₹3,400 - ₹4,800"
+                }
+              ],
+              "roadDetails": {
+                "distanceKm": 1090,
+                "estimatedDriveTime": "19 - 21 hrs",
+                "recommendedHalts": [
+                  "Kurnool (Breakfast)",
+                  "Bangalore Bypass (Lunch)",
+                  "Salem (Evening halt)"
+                ],
+                "tollEstimate": "₹1,240 FASTag"
+              }
+            },
+            "returnJourney": {
+              "direction": "return",
+              "title": "Return Journey:  → ",
+              "from": "Ernakulam Town (ERN) / Ernakulam Jn (ERS)",
+              "to": "Secunderabad Junction (SC)",
+              "distanceKm": 1090,
+              "guidance": {
+                "whenToStart": "Complete checkout by 09:30 AM on Day 5, reach ERN station by 10:30 AM",
+                "whereToBoard": "Ernakulam Town (ERN) Platform 1 (Main entrance facing Kaloor)",
+                "arrivalDetails": "Arrives Secunderabad (SC) at 12:40 PM on the following afternoon",
+                "checkOutBuffer": "Allow 1.5 hrs transfer time if returning from Alleppey/Kumarakom backwaters to Ernakulam"
+              },
+              "trains": [
+                {
+                  "trainNumber": "17229",
+                  "trainName": "Sabari Express (Return)",
+                  "departureTime": "11:20 AM",
+                  "arrivalTime": "12:40 PM (+1d)",
+                  "duration": "25h 20m",
+                  "originStation": "Ernakulam Town (ERN)",
+                  "destinationStation": "Secunderabad (SC)",
+                  "frequency": "Daily",
+                  "classes": [
+                    "2A",
+                    "3A",
+                    "SL"
+                  ],
+                  "fareRange": "₹620 - ₹2,450"
+                },
+                {
+                  "trainNumber": "12643",
+                  "trainName": "Swarna Jayanti Express (Return)",
+                  "departureTime": "09:30 PM",
+                  "arrivalTime": "08:20 PM (+1d)",
+                  "duration": "22h 50m",
+                  "originStation": "Ernakulam Jn (ERS)",
+                  "destinationStation": "Secunderabad (SC)",
+                  "frequency": "Mon only",
+                  "classes": [
+                    "1A",
+                    "2A",
+                    "3A",
+                    "SL"
+                  ],
+                  "fareRange": "₹680 - ₹3,600"
+                }
+              ],
+              "flights": [
+                {
+                  "airline": "IndiGo",
+                  "flightNumber": "6E-433",
+                  "departureTime": "08:45 PM",
+                  "arrivalTime": "10:30 PM",
+                  "duration": "1h 45m (Direct)",
+                  "fareRange": "₹3,500 - ₹5,100"
+                }
+              ],
+              "roadDetails": {
+                "distanceKm": 1090,
+                "estimatedDriveTime": "19 - 21 hrs via NH544 & NH44",
+                "recommendedHalts": [
+                  "Palakkad Gap",
+                  "Hosur / Bangalore Bypass",
+                  "Anantapur"
+                ],
+                "tollEstimate": "₹1,240 FASTag"
+              }
+            }
+          },
+          "destinationOverview": {
+            "totalDistanceCoveredKm": 1090,
+            "signatureNearbyPlaces": [
+              {
+                "name": "Fort Kochi Heritage Area",
+                "category": "Colonial & Art",
+                "distanceFromBaseKm": 14,
+                "driveTime": "35 mins",
+                "highlight": "Chinese Fishing Nets, Jew Town & Princess Street cafes",
+                "bestTime": "04:30 PM - 07:00 PM"
+              },
+              {
+                "name": "Munnar Tea Valleys",
+                "category": "Hill Station & Nature",
+                "distanceFromBaseKm": 128,
+                "driveTime": "3.5 hrs",
+                "highlight": "Lockhart Gap viewpoints, cascading tea slopes & waterfalls",
+                "bestTime": "Early Morning / Sunrise"
+              },
+              {
+                "name": "Alleppey Backwaters & Canals",
+                "category": "Lagoon & Cruise",
+                "distanceFromBaseKm": 53,
+                "driveTime": "1h 20 mins",
+                "highlight": "Private Shikara country boat tours through paddy waterways",
+                "bestTime": "11:00 AM - 04:30 PM"
+              },
+              {
+                "name": "Marari Pristine Beach",
+                "category": "Coastal Relaxation",
+                "distanceFromBaseKm": 42,
+                "driveTime": "1 hr",
+                "highlight": "Quiet palm-shaded shoreline with fresh catch shacks",
+                "bestTime": "05:00 PM - 06:45 PM Sunset"
+              }
+            ],
+            "bestSeasonToVisit": "October to March (Pleasant weather, 22°C - 30°C)",
+            "localCuisinePicks": [
+              "Appam with Vegetable Stew",
+              "Kerala Karimeen Pollichathu",
+              "Malabar Parotta",
+              "Filter Kaapi"
+            ],
+            "essentialLocalTips": [
+              "Book Sabari Express tickets 3 weeks prior due to weekend passenger demand.",
+              "Pre-dawn temple visits require traditional attire (Dhoti / Saree or Salwar).",
+              "Hire a verified local driver for the Kochi to Munnar ghat roads."
+            ]
+          }
+        }
+      }
     ]
   },
   "aiConversations": [
@@ -12267,7 +14324,7 @@
       "modificationPrompt": "Evaluate dependency cascade before editing..."
     },
     "metrics": {
-      "totalGenerations": 49,
+      "totalGenerations": 50,
       "totalModifications": 120,
       "totalFinalized": 31,
       "totalExports": 27,
